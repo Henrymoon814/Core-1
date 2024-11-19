@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Henry</title>
+
+<style type="text/css">
+
+body {
+		height: 100vh;
+		background: linear-gradient(to bottom, #FFDEE9, #B5FFFC, #FFC3A0);
+		background-repeat: no-repeat;
+		background-size: cover;
+        overflow: hidden;
+}
+	
+#container {
+	width: 2550px;
+	height: 2550px;
+	top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 50%;
+    margin:auto;
+	position: absolute;
+    background-color: transparent;
+  	animation: spin 20s linear infinite;
+  	transform-origin: 50% 50%;
+}
+
+button:hover {
+	transform: scale(1.1);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.allemoji {
+	position: absolute;	
+	width: 100px;
+}
+
+#Horrified { 
+    top: 0px;
+    left: 1150px;
+    position: absolute;
+    width: 300px;
+    opacity: 1;
+}
+
+#Smile { 
+    top: 190px;
+    left: 1650px;
+    position: absolute;
+    width: 350px;
+    opacity: 1;
+}
+
+#Laughcry { 
+    top: 600px;
+    left: 2100px;
+    position: absolute;
+    width: 300px;
+    opacity: 1;
+}
+
+#Rich { 
+	top: 1150px;
+    left: 2250px;
+    position: absolute;
+    width: 330px;
+    opacity: 1;
+}
+    
+
+#Sad { 
+   top: 1650px;
+    left: 2080px;
+    position: absolute;
+    width: 300px;
+    opacity: 1;
+}
+
+#Death { 
+    top: 2250px;
+    left: 1150px;
+    position: absolute;
+    width: 300px;
+    opacity: 1;
+}
+
+#Disgusted { 
+    top: 2030px;
+    left: 500px;
+    position: absolute;
+    width: 300px;
+    opacity: 1;
+}
+
+#Evil { 
+    top: 1650px;
+    left: 170px;
+    position: absolute;
+    width: 290px;
+    opacity: 1;
+}
+
+#Sleep { 
+    top: 1150px;
+    left: 0px;
+    position: absolute;
+    width: 350px;
+    opacity: 1;
+}
+
+#Love { 
+    top: 600px;
+    left: 170px;
+    position: absolute;
+    width: 350px;
+    opacity: 1;
+}
+
+#Smart { 
+    top: 190px;
+    left: 500px;
+    position: absolute;
+    width: 360px;
+    opacity: 1;
+}
+
+#Surprised { 
+    top: 2100px;
+    left: 1750px;
+    position: absolute;
+    width: 300px;
+    opacity: 1;
+}
+
+#bottom {
+	width: -2000px;
+	top: -2000px;
+	left: 50px;
+	padding: 20px 50px;
+    font-size: 2.5em;
+
+</style>
+
+</head>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Button</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #FFDEE9, #B5FFFC, #FFC3A0);
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        #musicButton {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 300px;
+            height: 300px;
+            background: url('music-icon.png') no-repeat center center;
+            background-size: cover;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<button id="musicButton" onclick="toggleMusic()"></button>
+<audio id="music" src="Sonic.mp3"></audio>
+
+<script>
+    let isPlaying = false;
+    const music = document.getElementById("music");
+
+    function toggleMusic() {
+        if (isPlaying) {
+            music.pause();
+        } else {
+            music.play();
+        }
+        isPlaying = !isPlaying;
+    }
+
+    music.onended = () => {
+        isPlaying = false;
+    };
+</script>
+
+</body>
+</html>
+<body>
+
+
+<audio id="song" src="Sonic.mp3"></audio>
+
+<script>
+	let isPlaying = false;
+	const song = document.getElementById("song");
+
+	function togglePlay() {
+		if (isPlaying) {
+			song.pause();
+			isPlaying = false;
+			document.getElementById("playButton").textContent = "Play Song";
+		} else {
+			song.play();
+			isPlaying = true;
+			document.getElementById("playButton").textContent = "Pause Song";
+		}
+	}
+
+	song.onended = function() {
+		isPlaying = false;
+		document.getElementById("playButton").textContent = "Play Song";
+	};
+</script>
+
+</body>
+</html>
+<body>
+
+<div class="container" id="container">
+	
+<a href="Germany.html" target="_blank"><img class="allemoji" id="Smile" src="Emoji 1.png" onclick="openModal(1)"></a>
+<a href="Thailand.html" target="_blank"><img class="allemoji" id="Laughcry" src="Emoji 2.png" onclick="openModal(2)"></a>
+<a href="Italy.html" target="_blank"><img class="allemoji" id="Rich" src="Emoji 3.png" onclick="openModal(3)"></a>
+<a href="Austria.html" target="_blank"><img class="allemoji" id="Sad" src="Emoji 4.png" onclick="openModal(4)"></a>
+<a href="Slovakia.html" target="_blank"><img class="allemoji" id="Surprised" src="Emoji 5.png" onclick="openModal(5)"></a>
+<a href="China.html" target="_blank"><img class="allemoji" id="Death" src="Emoji 6.png" onclick="openModal(6)"></a>
+<a href="France.html" target="_blank"><img class="allemoji" id="Disgusted" src="Emoji 7.png" onclick="openModal(7)"></a>
+<a href="Morocco.html" target="_blank"><img class="allemoji" id="Evil" src="Emoji 8.png" onclick="openModal(8)"></a>
+<a href="Mexico.html" target="_blank"><img class="allemoji" id="Sleep" src="Emoji 9.png" onclick="openModal(9)"></a>
+<a href="Spain.html" target="_blank"><img class="allemoji" id="Love" src="Emoji 10.png" onclick="openModal(10)"></a>
+<a href="Switzerland.html" target="_blank"><img class="allemoji" id="Smart" src="Emoji 11.png" onclick="openModal(11)"></a>
+<a href="Czech Republic.html" target="_blank"><img class="allemoji" id="Horrified" src="Emoji 12.png" onclick="openModal(12)"></a>
+
+</div>
+
+
+<script>
+let isSpinning = true;
+
+function toggleSpin() {
+	const container = document.getElementById('container');
+	if (isSpinning) {
+		container.style.animationPlayState = 'paused';
+	} else {
+		container.style.animationPlayState = 'running';
+	}
+	isSpinning = !isSpinning;
+}
+
+document.addEventListener('keydown', function(event) {
+	if (event.code === 'Space') {
+		toggleSpin();
+	}
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Quote for Mexico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle, #ffecd2, #fcb69f, #fe8773);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      max-width: 850px;
+      padding: 3rem;
+      background: linear-gradient(145deg, #ffffff, #fefaf6);
+      border-radius: 36px;
+      box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2), -10px -10px 50px rgba(255, 255, 255, 0.5);
+      position: relative;
+      overflow: hidden;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      gap: 1.5rem;
+    }
+
+    .quote-box {
+      flex: 1;
+      background: linear-gradient(135deg, #f7c8ce, #ff9a9e);
+      padding: 2rem;
+      border-radius: 28px;
+      box-shadow: 0 15px 40px rgba(247, 200, 206, 0.5);
+      color: #fff;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .quote-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(247, 200, 206, 0.7);
+    }
+
+    .quote-box h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      letter-spacing: 1.5px;
+    }
+
+    .quote-box p {
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .country-info {
+      flex: 1;
+      text-align: right;
+    }
+
+    .country-info h1 {
+      font-size: 3rem;
+      color: #ff7e5f;
+      font-weight: 900;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .country-info .location {
+      display: inline-block;
+      font-size: 1rem;
+      background: linear-gradient(45deg, #4facfe, #00f2fe);
+      padding: 0.8rem 1.6rem;
+      border-radius: 20px;
+      color: #fff;
+      font-weight: 700;
+      box-shadow: 0 10px 20px rgba(0, 242, 254, 0.4);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .country-info .location:hover {
+      transform: scale(1.15);
+      background: linear-gradient(45deg, #00f2fe, #4facfe);
+    }
+
+    .year {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(90deg, #fbc2eb, #a6c1ee);
+      padding: 0.6rem 1.8rem;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 1.8rem;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .story {
+      background: linear-gradient(135deg, #fff7f7, #ffffff);
+      border-left: 10px solid #ff7e5f;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      color: #444;
+      line-height: 1.8;
+      transition: transform 0.3s ease;
+    }
+
+    .story:hover {
+      transform: translateY(-5px);
+    }
+
+    .story p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .quote-box {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      .country-info {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="quote-box">
+        <h2>My Quote for 🇲🇽</h2>
+        <p>One of the best</p>
+      </div>
+      <div class="country-info">
+        <h1>Mexico 🇲🇽</h1>
+        <span class="location">Cancun</span>
+      </div>
+    </div>
+    <div class="year">Year: 2023</div>
+    <div class="story">
+      <p>Cancun is one of the best travel destinations I’ve ever visited. The serene beaches, vibrant nightlife, and unique cultural experiences made it unforgettable. It's a place I long to revisit.</p>
+    </div>
+  </div>
+</body>
+</html>

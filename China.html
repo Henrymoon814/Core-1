@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Quote for China</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle, #ffe6e6, #fbe7e9, #f7f8fa);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 3rem;
+      background: linear-gradient(135deg, #fffdfd, #fef8fb);
+      border-radius: 36px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+      gap: 1rem;
+    }
+
+    .quote-box {
+      flex: 1;
+      background: linear-gradient(135deg, #ff7eb3, #ff758c);
+      padding: 1.5rem;
+      border-radius: 24px;
+      box-shadow: 0 15px 30px rgba(255, 115, 140, 0.4);
+      color: #fff;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .quote-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 50px rgba(255, 115, 140, 0.6);
+    }
+
+    .quote-box h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+      color: #ffe4ea;
+      letter-spacing: 1.5px;
+    }
+
+    .quote-box p {
+      font-size: 1.8rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .country-info {
+      flex: 1;
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    .country-info h1 {
+      font-size: 2.5rem;
+      color: #ff6584;
+      margin-bottom: 8px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .country-info .location {
+      font-size: 1rem;
+      color: #fff;
+      background: linear-gradient(45deg, #00b4d8, #0077b6);
+      padding: 0.6rem 1.2rem;
+      border-radius: 16px;
+      font-weight: 600;
+      box-shadow: 0 5px 15px rgba(0, 123, 182, 0.4);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .country-info .location:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #0077b6, #005f8c);
+    }
+
+    .year {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(90deg, #f6ad55, #e53e3e);
+      padding: 0.6rem 1.5rem;
+      border-radius: 16px;
+      display: inline-block;
+      margin-bottom: 2rem;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .story {
+      background: linear-gradient(135deg, #fff5f8, #fff);
+      border-left: 8px solid #ff7eb3;
+      padding: 1.8rem;
+      border-radius: 16px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #555;
+      transition: transform 0.3s ease;
+    }
+
+    .story:hover {
+      transform: translateY(-3px);
+    }
+
+    .story p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .quote-box {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .country-info {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="quote-box">
+        <h2>My Quote for 🇨🇳</h2>
+        <p>Knackered and smelly 🤮</p>
+      </div>
+      <div class="country-info">
+        <h1>China 🇨🇳</h1>
+        <span class="location">Zhangjiajie</span>
+      </div>
+    </div>
+    <div class="year">Year: 2023</div>
+    <div class="story">
+      <p>The people were very loud, and there seemed to be a lack of manners, with the streets smelling unpleasant. There was no sense of order, and the meat sold was mostly fatty chunks. It was also frustrating that social media apps from outside the country were blocked. My family found the trip extremely difficult, and we had never experienced such a challenging journey before.</p>
+    </div>
+  </div>
+</body>
+</html>

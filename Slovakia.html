@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Quote for Slovakia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #1c1c1c;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 850px;
+      padding: 3rem;
+      background: linear-gradient(135deg, #333333, #1a1a1a);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .quote-box {
+      background: linear-gradient(135deg, #0d47a1, #00e5ff);
+      padding: 1.5rem;
+      border-radius: 16px;
+      text-align: center;
+      color: #fff;
+      transition: transform 0.3s ease;
+      box-shadow: 0 15px 35px rgba(0, 229, 255, 0.5);
+    }
+
+    .quote-box:hover {
+      transform: scale(1.1);
+    }
+
+    .quote-box h2 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+      color: #00e5ff;
+      text-shadow: 0 2px 10px rgba(0, 229, 255, 0.7);
+    }
+
+    .quote-box p {
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #ff4081;
+      text-shadow: 0 3px 8px rgba(255, 64, 129, 0.8);
+    }
+
+    .country-info {
+      text-align: right;
+    }
+
+    .country-info h1 {
+      font-size: 2.4rem;
+      color: #ff4081;
+      font-weight: 900;
+      text-shadow: 0 2px 8px rgba(255, 64, 129, 0.8);
+    }
+
+    .country-info .location {
+      font-size: 1.2rem;
+      color: #1c1c1c;
+      background: #00e676;
+      padding: 0.6rem 1.2rem;
+      border-radius: 12px;
+      font-weight: 700;
+      box-shadow: 0 5px 15px rgba(0, 230, 118, 0.5);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .country-info .location:hover {
+      transform: scale(1.1);
+      background: #00c853;
+    }
+
+    .year {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #1c1c1c;
+      background: linear-gradient(90deg, #ff4081, #00e5ff);
+      padding: 0.5rem 1.2rem;
+      border-radius: 12px;
+      display: inline-block;
+      margin-bottom: 2rem;
+      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .story {
+      background: #333;
+      border-left: 6px solid #00e5ff;
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      font-size: 1.3rem;
+      line-height: 1.8;
+      color: #e0e0e0;
+    }
+
+    .story p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .quote-box {
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+
+      .country-info {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="quote-box">
+        <h2>My Quote for 🇸🇰</h2>
+        <p>Dark City</p>
+      </div>
+      <div class="country-info">
+        <h1>Slovakia 🇸🇰</h1>
+        <span class="location">Bratislava</span>
+      </div>
+    </div>
+    <div class="year">Year: 2023</div>
+    <div class="story">
+      <p>There weren't as many sights to see as I expected, and I was surprised by how dark the city was at night. It felt even more noticeable after visiting neighboring Hungary. I was also surprised to hear that some Slovakians feel depressed when they return home after spending time in Hungary.</p>
+    </div>
+  </div>
+</body>
+</html>
